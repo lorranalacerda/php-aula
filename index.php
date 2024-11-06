@@ -59,16 +59,45 @@
 
     // echo "voce pediu $quantidade sorvete(s) de $sabor. total: R$".$total;
 
-    function calcularComImposto($preco, $quantidade, $imposto = 0.1) {
-        $total = $preco * $quantidade;
-        $totalComImposto = $total + ($total * $imposto);
-        return $totalComImposto;
+    // function calcularComImposto($preco, $quantidade, $imposto = 0.1) {
+    //     $total = $preco * $quantidade;
+    //     $totalComImposto = $total + ($total * $imposto);
+    //     return $totalComImposto;
+    // }
+
+    // $preco_unitario = 30;
+    // $quantidade = 2;
+
+    // echo "total com impostos = R$ ". calcularComImposto ($preco_unitario, $quantidade)
+
+$lista_compras = ["maçã", "leite", "pão", "arroz", "café"];
+    // echo $lista_compras[0];
+
+    // $notas = [8.5, 9.0, 7.5];
+    // $media = ($notas[0] + $notas[1] + $notas[2]) /3;
+    // $media = number_format($media, 2); // limita a dízima
+    // echo "a media das notas é : ". $media; // exibe media de 8.33
+
+    // $pessoas = ["mortani","baeta","hispian","holin","kaliop"];
+    // echo $pessoas [0] ."</br>". $pessoas [1] ."</br>".$pessoas [2] ."</br>".$pessoas [3] ."</br>".$pessoas [4] . "<br><br>";
+    // print_r($pessoas);
+    // echo "<br><br>";
+    // var_dump($pessoas); // mostra o numero de carcteres
+    // echo"<br><br>";
+    // // transforma em string e separa com o caracter escolhido
+    // echo implode(" --- ", $pessoas); echo "<br>";
+    // echo "<br><br>";
+    // // divide o indice e quebra linha
+    // foreach ($pessoas as $pessoas) {
+    //     echo $pessoas . "<br>";
+    // }
+
+    $frase = ["its tiiiiiiiiime!!!","na na na diva","a vida é sofrida, mas não vou chorar","nhe nhe nhe vc é uma chata!","who are you?"];
+    echo implode("<br><br>", $frase);
+    echo"<br><br>";
+    foreach ($frase as $frase) {
+      echo $frase . "<br>";
     }
-
-    $preco_unitario = 30;
-    $quantidade = 2;
-
-    echo "total com impostos = R$ ". calcularComImposto ($preco_unitario, $quantidade)
 
     ?>
 
